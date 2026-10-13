@@ -23,3 +23,5 @@ Menciptakan platform lowongan kerja yang terfokuskan kepada magang, part-time, d
 * Database: PostgreSQL
 
 ## Flow Aplikasi
+Bagi Mahasiswa  
+![mahasiswa flowchart](./Flowchart_ISAB.png)
