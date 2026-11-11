@@ -1,0 +1,86 @@
+:root {
+    --primary-col: #043915;
+    --secondary-col: #4c763b;
+    --tertiary-col: #b0ce88;
+    --contrast-col: #ffb968;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+    font-family: "poppins";
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+div#root {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+}
+
+section.page-container {
+    flex-basis: 0;
+    flex-grow: 1;
+
+    overflow-y: scroll;
+}
+
+@font-face {
+    font-family: "lalezar";
+    src: url("../fonts/Lalezar-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "poppins";
+    src: url("../fonts/Poppins-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "poppins";
+    src: url("../fonts/Poppins-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "poppins";
+    src: url("../fonts/Poppins-Italic.ttf");
+    font-weight: normal;
+    font-style: italic;
+}
+
+/*Default button styling*/
+button {
+    background-color: var(--secondary-col);
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 1.2rem;
+
+    transition: 0.25s;
+}
+button:hover {
+    cursor: pointer;
+}
+button.h-prim:hover {
+    background-color: var(--primary-col);
+}
+button.h-tert:hover {
+    background-color: var(--tertiary-col);
+}
+button.big {
+    font-size: 1.7rem;
+}

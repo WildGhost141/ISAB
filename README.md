@@ -1,27 +1,19 @@
-# Platform Internship Sharing Board (ISAB)
-ISAB adalah sebuah platform berbasis web yang menjadi wadah bagi mahasiswa mencari lowongan-lowongan magang serta mencari pekerjaan paruh-waktu lain.
+# React + Vite
 
-## Permasalahan Yang Diangkat
-Susahnya mencari pekerjaan magang, industri mencari fresh graduate yang memiliki pengalaman, sulit mencocokkan jadwal antara siswa dengan perusahaan, siswa tidak mendapatkan info tentang lowongan magang terbaru. 
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Tujuan Aplikasi
-Menciptakan platform lowongan kerja yang terfokuskan kepada magang, part-time, dan juga freelancing, menyediakan fitur pencocokan jadwal secara otomatis, menyediakan fitur newsletter tentang pembukaan lowongan baru jika ada.
+Currently, two official plugins are available:
 
-## User Requirements
-  * Mahasiswa
-      - Mampu dengan mudah mendapatkan informasi tentang pembukaan lowongan magang baru.
-      - Mampu dengan mudah mencocokkan jadwal magang dengan jadwal mata kuliah.
-      - Dapat membantu mahasiswa dalam mendapatkan pengalaman pekerjaan sebelum lulus.
-  * Perusahaan
-      - Mampu dengan mudah mencari talenta berkualitas.
-      - Mampu dengan mudah memilah antara kandidat dengan jadwal yang cocok.
-      - Mampu memilah kandidat berdasarkan keterampilan masing-masing.
-   
-## Stack Yang Digunakan
-* Frontend: React.JS
-* Backend: Express.JS
-* Database: PostgreSQL
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Flow Aplikasi
-Bagi Mahasiswa  
-![mahasiswa flowchart](./Flowchart_ISAB.png)
+## React Compiler
+
+The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+
+Note: This will impact Vite dev & build performances.
+You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

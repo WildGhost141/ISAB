@@ -1,0 +1,92 @@
+section.auth-parent {
+    width: 100vw;
+}
+
+div.banner-join {
+    padding: 2em;
+    background: linear-gradient(to top, var(--primary-col), #b0ce88);
+}
+div.banner-join.second {
+    background: none;
+    background-color: white;
+}
+div.banner-join > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+div.banner-join > div > div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div.banner-join .main-text {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+div.banner-join .main-text.bottom {
+    color: var(--contrast-col);
+    font-size: 7rem;
+    margin-top: -2rem;
+}
+div.banner-join .tagline-img-container {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+div.banner-join.second .tagline-img-container {
+    align-items: flex-start;
+}
+div.banner-join .bg-box {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+
+    width: 80%;
+    height: auto;
+    aspect-ratio: 16/8;
+
+    background-color: var(--secondary-col);
+    border-radius: 10px;
+
+    z-index: 1;
+}
+div.banner-join.second .bg-box {
+    left: 5%;
+}
+div.banner-join .tagline-img-container > img {
+    width: 80%;
+    height: auto;
+
+    position: relative;
+    z-index: 2;
+
+    transform: translateX(-10%);
+}
+div.banner-join.second .tagline-img-container > img {
+    transform: translateX(-30%);
+}
+
+div.banner-join .cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+div.banner-join .cta-container > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+div.banner-join .cta-container > p > b {
+    text-decoration: underline;
+    color: var(--secondary-col);
+}
+div.banner-join .cta-container > p > b:hover {
+    cursor: pointer;
+}
