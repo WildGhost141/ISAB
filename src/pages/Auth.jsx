@@ -1,9 +1,15 @@
+import { useContext } from "react";
 import "../assets/css/pages/auth.css";
 
 import talent1 from "../assets/img/talents/landingmodel.png";
 import talent2 from "../assets/img/talents/landingmodel2.png";
+import { PopupContext } from "../providers/PopupProvider";
+import RegisterPopup from "../popups/RegisterPopup";
+import LoginPopup from "../popups/LoginPopup";
 
 function Auth() {
+  const { popup, setPopup } = useContext(PopupContext);
+
   return (
     <>
       <section className="page-container auth-parent">
@@ -26,45 +32,51 @@ function Auth() {
               <div className="bg-box"></div>
             </div>
             <div className="cta-container">
-              {/* Gap */}
-              <div
-                style={{
-                  width: "100%",
-                  height: "0",
-                  flexBasis: "0",
-                  flexGrow: "1",
-                }}
-              ></div>
-
-              <h1>WHO WILL YOU BE JOINING AS?</h1>
               <div>
-                <button className="h-prim">I'M A STUDENT</button>
-                <button className="h-prim">I'M AN EMPLOYER</button>
+                <h1>WHO WILL YOU BE JOINING AS?</h1>
+                <div>
+                  <button
+                    className="h-prim"
+                    onClick={(e) =>
+                      setPopup({
+                        title: "Create your new account",
+                        elements: (
+                          <RegisterPopup params={{ type: "student" }} />
+                        ),
+                      })
+                    }
+                  >
+                    I'M A STUDENT
+                  </button>
+                  <button
+                    className="h-prim"
+                    onClick={(e) =>
+                      setPopup({
+                        title: "Create your new account",
+                        elements: (
+                          <RegisterPopup params={{ type: "employer" }} />
+                        ),
+                      })
+                    }
+                  >
+                    I'M AN EMPLOYER
+                  </button>
+                </div>
               </div>
 
-              {/* Gap */}
-              <div
-                style={{
-                  width: "100%",
-                  height: "0",
-                  flexBasis: "0",
-                  flexGrow: "1",
-                }}
-              ></div>
-
               <p>
-                Already have an account? <b>Log In!</b>
+                Already have an account?{" "}
+                <b
+                  onClick={() =>
+                    setPopup({
+                      title: "Log in to your account",
+                      elements: <LoginPopup params={{ type: "student" }} />,
+                    })
+                  }
+                >
+                  Log In!
+                </b>
               </p>
-
-              {/* Gap */}
-              <div
-                style={{
-                  width: "100%",
-                  height: "0",
-                  flexBasis: "0",
-                  flexGrow: "1",
-                }}
-              ></div>
             </div>
           </div>
         </div>

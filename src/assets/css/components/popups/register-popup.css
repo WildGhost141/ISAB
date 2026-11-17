@@ -1,0 +1,43 @@
+.type-chooser {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 1rem;
+
+    margin-bottom: 2rem;
+}
+.type-chooser button {
+    border-radius: 100px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--primary-col);
+
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+
+    background-color: white;
+    color: var(--primary-col);
+}
+.type-chooser button.selected {
+    background-color: var(--primary-col);
+    color: white;
+}
+.type-chooser button:not(.selected):hover {
+    background-color: var(--secondary-col);
+    color: white;
+}
+.type-chooser button.selected:hover {
+    cursor: default;
+}
+
+.input-form {
+    margin-bottom: 2rem;
+}
+.input-form > input {
+    width: 100%;
+}
+.input-form > input:not(:last-child) {
+    margin-bottom: 0.5rem;
+}

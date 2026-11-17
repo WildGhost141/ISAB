@@ -75,9 +75,13 @@ div.banner-join .cta-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 3rem;
 }
-div.banner-join .cta-container > div {
+div.banner-join .cta-container > div > h1 {
+    width: 100%;
+    text-align: center;
+}
+div.banner-join .cta-container > div > div {
     width: 100%;
     display: flex;
     justify-content: center;

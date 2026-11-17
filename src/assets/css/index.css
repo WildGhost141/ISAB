@@ -84,3 +84,22 @@ button.h-tert:hover {
 button.big {
     font-size: 1.7rem;
 }
+
+/* Default input styling */
+input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--primary-col);
+}
+input:focus {
+    outline: none;
+    border-color: var(--secondary-col);
+    border-width: 3px;
+}
+input:focus::placeholder {
+    font-weight: bold;
+}
